@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradeeshwar S | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-theme="dark">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-75">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-info" href="#">PS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero text-center d-flex align-items-center justify-content-center flex-column">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold text-gradient">Hi, I'm <span class="text-info">Pradeeshwar S</span></h1>
+      <p class="lead text-secondary mb-4">
+        Full Stack Developer | Engineering Student | Innovating Practical Tech Solutions
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#projects" class="btn btn-info text-dark fw-semibold px-4">View Projects</a>
+        <a href="#contact" class="btn btn-outline-light px-4">Contact Me</a>
+      </div>
+      <div class="hero-img mt-5 mx-auto">
+        <img src="assets/profile.JPG" alt="Profile Photo" class="rounded-circle img-fluid shadow-lg" 
+         data-bs-toggle="modal" data-bs-target="#profileModal" style="cursor:pointer;">
+     </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="text-center py-5 bg-dark text-light">
+    <div class="container">
+      <h2 class="fw-bold text-info mb-3">About Me</h2>
+      <p class="lead mx-auto" style="max-width: 700px;">
+        I'm a Computer Science Engineering student passionate about full-stack development and real-world problem solving. 
+        I focus on building dynamic, scalable, and visually engaging web applications with clean UI and efficient backend logic.
+      </p>
+      <blockquote class="blockquote mt-4 text-secondary">
+        “Turning ideas into impactful digital experiences.”
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="py-5 text-light bg-gradient">
+    <div class="container">
+      <h2 class="fw-bold text-info text-center mb-5">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5>Frontend</h5>
+          <div class="progress my-3"><div class="progress-bar bg-info" style="width:90%">React (90%)</div></div>
+          <div class="progress my-3"><div class="progress-bar bg-info" style="width:85%">HTML / CSS (85%)</div></div>
+          <div class="progress my-3"><div class="progress-bar bg-info" style="width:88%">JavaScript (88%)</div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Backend & Tools</h5>
+          <div class="progress my-3"><div class="progress-bar bg-info" style="width:80%">PHP (80%)</div></div>
+          <div class="progress my-3"><div class="progress-bar bg-info" style="width:82%">MySQL (82%)</div></div>
+          <div class="progress my-3"><div class="progress-bar bg-info" style="width:75%">Node.js (75%)</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== PROJECTS SECTION ===== -->
+<section id="projects" class="py-5 bg-dark text-light text-center reveal">
+  <div class="container">
+    <h2 class="fw-bold text-info mb-4">Featured Projects</h2>
+    <div class="row g-4">
+
+      <!-- Project 1: Akshaya Travels -->
+      <div class="col-md-4  left">
+        <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project1" style="cursor:pointer;">
+          <div class="card-body">
+            <i class="bi bi-car-front fs-1 text-info"></i>
+            <h5 class="card-title mt-3">Akshaya Travels</h5>
+            <p class="card-text text-secondary">
+              Car reservation website built with React, PHP & MySQL featuring EmailJS confirmations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Exam Seating System -->
+      <div class="col-md-4  right">
+        <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project2" style="cursor:pointer;">
+          <div class="card-body">
+            <i class="bi bi-grid-3x3-gap fs-1 text-info"></i>
+            <h5 class="card-title mt-3">Exam Seating System</h5>
+            <p class="card-text text-secondary">
+              Electron.js desktop app that automates college exam seating allocation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Orion CPU Scheduling -->
+      <div class="col-md-4">
+        <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project3" style="cursor:pointer;">
+          <div class="card-body">
+            <i class="bi bi-cpu fs-1 text-info"></i>
+            <h5 class="card-title mt-3">Orion CPU Scheduling</h5>
+            <p class="card-text text-secondary">
+              Web simulator comparing Orion and traditional CPU scheduling algorithms.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-5 text-light text-center">
+    <div class="container">
+      <h2 class="fw-bold text-info mb-4">Contact Me</h2>
+      <form id="contactForm" class="mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-info text-dark fw-semibold">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- ===== PROFILE MODAL ===== -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-info border-opacity-25 shadow-lg">
+      <div class="modal-header border-info border-opacity-50">
+        <h5 class="modal-title text-info" id="profileModalLabel">About Pradeeshwar S</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="assets/profile.JPG" class="rounded-circle mb-3" style="width:120px; height:120px;">
+        <p class="mb-0 text-secondary">
+          I’m a passionate Computer Science Engineering student with expertise in full-stack development. 
+          I enjoy building scalable applications and exploring creative UI design.
+        </p>
+      </div>
+      <div class="modal-footer border-info border-opacity-25">
+        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- ===== PROJECT 1 MODAL ===== -->
+<div class="modal fade" id="project1" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-info border-opacity-25 shadow-lg">
+      <div class="modal-header border-info border-opacity-50">
+        <h5 class="modal-title text-info" id="project1Label">Akshaya Travels — Car Reservation Website</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-start">
+        <img src="assets/project1.jpg" class="img-fluid rounded mb-3" alt="Akshaya Travels">
+        <p>
+          A full-stack car reservation platform built using React, PHP, and MySQL.
+          It supports location-based pickup via Map API, automatic booking confirmations through EmailJS,
+          and admin panel management.
+        </p>
+        <ul>
+          <li><b>Frontend:</b> React, Bootstrap</li>
+          <li><b>Backend:</b> PHP, MySQL</li>
+          <li><b>Integration:</b> EmailJS, Map API</li>
+        </ul>
+      </div>
+      <div class="modal-footer border-info border-opacity-25">
+        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROJECT 2 MODAL ===== -->
+<div class="modal fade" id="project2" tabindex="-1" aria-labelledby="project2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-info border-opacity-25 shadow-lg">
+      <div class="modal-header border-info border-opacity-50">
+        <h5 class="modal-title text-info" id="project2Label">Exam Seating Arrangement System</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-start">
+        <img src="assets/project2.jpg" class="img-fluid rounded mb-3" alt="Exam Seating System">
+        <p>
+          An Electron.js-based desktop app for automatic student seating management.
+          It prevents students of the same department or gender from sitting together, with a clean admin UI.
+        </p>
+        <ul>
+          <li><b>Framework:</b> Electron.js</li>
+          <li><b>Database:</b> MySQL</li>
+          <li><b>Language:</b> JavaScript, Node.js</li>
+        </ul>
+      </div>
+      <div class="modal-footer border-info border-opacity-25">
+        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROJECT 3 MODAL ===== -->
+<div class="modal fade" id="project3" tabindex="-1" aria-labelledby="project3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-info border-opacity-25 shadow-lg">
+      <div class="modal-header border-info border-opacity-50">
+        <h5 class="modal-title text-info" id="project3Label">Orion CPU Scheduling Simulator</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-start">
+        <img src="assets/project3.jpg" class="img-fluid rounded mb-3" alt="Orion Simulator">
+        <p>
+          A web-based simulator that visualizes CPU scheduling algorithms, including FCFS, SJF, and Round Robin,
+          alongside my custom Orion algorithm with Gantt chart visualizations.
+        </p>
+        <ul>
+          <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
+          <li><b>Visualization:</b> Dynamic Gantt Chart</li>
+          <li><b>Algorithm:</b> Orion Scheduling</li>
+        </ul>
+      </div>
+      <div class="modal-footer border-info border-opacity-25">
+        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="text-center py-4 bg-dark text-secondary">
+    <p class="mb-0">© 2025 Pradeeshwar S — Built with ❤️ using HTML, CSS, JS & Bootstrap</p>
+  </footer>
+
+
+  <!-- Bootstrap Bundle (includes Modal support) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
